@@ -1,0 +1,132 @@
+
+/* styles.css */
+html{
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    background-color: #f1f1f1;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .logo img {
+    width: 300px; 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px; 
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  .slideshow {
+    width: 100%;
+    height: 50%; 
+    overflow: hidden;
+   
+  }
+  
+  .slideshow-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    background-color: linear-gradient(to right, red 20%, blue 80%);
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bolder;
+    
+  }
+  .slide h2{
+   color: rgb(141, 15, 15)
+  }
+  .photo{
+    width: 300px;
+    height: 100%;
+    border-radius: 0 0 0 50px;
+    margin-left: 500px;
+  }
+  /* styles.css */
+  .application {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://img.freepik.com/free-photo/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany_181624-17876.jpg?size=626&ext=jpg&uid=R78038410&ga=GA1.1.132595157.1680616196&semt=sph');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    
+    
+   
+  }
+  .container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .countdown-item {
+    margin: 0 10px;
+  }
+  
+  .countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .countdown-number {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    padding: 5px;
+  }
+  
+  .countdown-label {
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  .apply-btn {
+    position: center; /* Position the button absolutely */
+    margin: 10px auto;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 55px;
+    display: block;
+    left: 50%; 
+    border-radius: 40px 40px 40px 40px;
+    background-color: red;
+    font-size: larger;
+  }
+  

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HOME</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://img1.wsimg.com/isteam/ip/0d532241-dda1-42d3-9ca9-6c0bd972594a/Logo%20Trans-fde57a7.png/:/rs=w:407,h:80,cg:true,m/cr=w:407,h:80/qt=q:95" alt="School Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="admission.html">ADMISSION</a></li>
+          <li><a href="programs.html">PROGRAMS</a></li>
+          <li><a href="campus.html">CAMPUS</a></li>
+          <li><a href="results.html">RESULTS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Slideshow section -->
+  <div class="slideshow">
+    <div class="slideshow-container">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4" checked>
+    <input type="radio" name="slide" id="slide5">
+    <input type="radio" name="slide" id="slide6">
+      <div class="slide">
+        <!-- Content for first slide -->
+        <img src="https://img1.wsimg.com/isteam/ip/0d532241-dda1-42d3-9ca9-6c0bd972594a/blob-ca2efc3.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1535,m" alt="lincoln malaysia">
+      </div>
+      <div class="slide">
+        <!-- Content for second slide -->
+       <img src="rs=w 1535,m.webp" alt="lincoln abuja">
+    </div>
+      <div class="slide">
+        <!-- Content for third slide -->
+        <h2>FACULTY OF BUS. and ACCOUNTING</h2>
+        <ul>
+            <li>Business Admin.</li>
+            <li>Banking Operations</li>
+            <li>Accounting</li>
+        </ul>
+        <img class="photo" src="https://img.freepik.com/premium-photo/what-can-i-you-cropped-portrait-young-businesswoman-wearing-headset-while-sitting-her-office_590464-8361.jpg?size=626&ext=jpg&uid=R78038410&ga=GA1.2.132595157.1680616196&semt=ais">
+      </div>
+      <div class="slide">
+        <!-- Content for fourth slide -->
+        <h2>FACULTY OF HEALTH SCI.</h2>
+        <ul>
+            <li>Medicine</li>
+            <li>Nursing</li>
+            <li>Biometric Science</li>
+            <img class="photo" src="https://img.freepik.com/free-photo/medical-doctor-girl-working-with-microscope-young-female-scientist-doing-vaccine-research_1157-48128.jpg?size=626&ext=jpg&uid=R78038410&ga=GA1.1.132595157.1680616196&semt=ais">
+        </ul>
+      </div>
+      <div class="slide">
+        <!-- Content for fourth slide -->
+        <h2>FACULTY OF COMPUTER SCIENCE.</h2>
+        <ul>
+            <li>SOFTWARE ENGINEERING</li>
+            <li>CYBERSECURITY</li>
+            <li>MOBILE COMPUTING</li>
+            <img class="photo" src="https://img.freepik.com/premium-photo/future-artificial-intelligence-robot-cyborg_31965-6980.jpg?size=626&ext=jpg&uid=R78038410&ga=GA1.2.132595157.1680616196&semt=ais">
+        </ul>
+      </div>
+      <div class="slide">
+        <!-- Content for fourth slide -->
+        <h2>FACULTY OF SOCIAL SCIENCE.</h2>
+        <ul>
+            <li>PSYCHOLOGY</li>
+            <li>MASS COMM</li>
+            <li>ENGLISH LANGUAGE</li>
+            <img class="photo" src="https://img.freepik.com/free-photo/group-five-african-college-students-spending-time-together-campus-university-yard-black-afro-friends-studying-education-theme_627829-6007.jpg?size=626&ext=jpg&uid=R78038410&ga=GA1.2.132595157.1680616196&semt=sph">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application section -->
+<section class="application">
+    <div class="container">
+      <h1>ADMISSION IS ONGOING FOR JULY INTAKE</h1>
+      <h2>YOU CAN JOIN THE ADMISSION BY CLICKING ON APPLY NOW BELOW</h2>
+      <p>The Admission will soon be coming to an end, make the right move now the date is fast approaching. Don’t miss out!</p>
+      <div class="countdown">
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <div id="days" class="countdown-number">00</div>
+            <span class="countdown-label">Days</span>
+          </div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <div id="hours" class="countdown-number">00</div>
+            <span class="countdown-label">Hours</span>
+          </div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <div id="minutes" class="countdown-number">00</div>
+            <span class="countdown-label">Minutes</span>
+          </div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-box">
+            <div id="seconds" class="countdown-number">00</div>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+  
+      <button class="apply-btn">Apply Now</button>
+    </div>
+  </section>
+     
+
+ 
+
+  <script>
+    // JavaScript code to create slideshow effect
+    const slideshow = document.querySelector('.slideshow-container');
+    let slideIndex = 0;
+    showSlide(slideIndex);
+
+    function showSlide(index) {
+      slideshow.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    setInterval(() => {
+      slideIndex = (slideIndex + 1) % 6; // Change '3' to the total number of slides
+      showSlide(slideIndex);
+    }, 3000); // Adjust the duration between slides (in milliseconds)
+    // JavaScript code for the countdown timer
+const countdownElement = document.querySelector('.countdown');
+
+function updateCountdown() {
+  const admissionDeadline = new Date('2023-07-01'); // Adjust the deadline date as needed
+  const now = new Date();
+  const difference = admissionDeadline - now;
+
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  document.getElementById('days').textContent = formatTime(days);
+  document.getElementById('hours').textContent = formatTime(hours);
+  document.getElementById('minutes').textContent = formatTime(minutes);
+  document.getElementById('seconds').textContent = formatTime(seconds);
+}
+
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
+}
+
+setInterval(updateCountdown, 1000);
+
+  </script>
+
+  <!-- Add your content here -->
+  
+</body>
+</html>
+
+ 
+ 
