@@ -137,14 +137,13 @@
     }
 
     setInterval(() => {
-      slideIndex = (slideIndex + 1) % 6; // Change '3' to the total number of slides
+      slideIndex = (slideIndex + 1) % 6; 
       showSlide(slideIndex);
-    }, 3000); // Adjust the duration between slides (in milliseconds)
-    // JavaScript code for the countdown timer
+    }, 3000); 
 const countdownElement = document.querySelector('.countdown');
 
 function updateCountdown() {
-  const admissionDeadline = new Date('2023-07-01'); // Adjust the deadline date as needed
+  const admissionDeadline = new Date('2024-07-01'); 
   const now = new Date();
   const difference = admissionDeadline - now;
 
@@ -167,7 +166,7 @@ setInterval(updateCountdown, 1000);
 
   </script>
 
-  <!-- Add your content here -->
+
   
 </body>
 </html>
